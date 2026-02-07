@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="phanix-logo.png" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Phanix Lab | Phaneendhar Nittala - Digital Investigator & Forensic Expert</title>
+    <meta name="description" content="Phanix Lab - Official portfolio of Phaneendhar Nittala (Phanix). Digital Investigator, forensic expert, and cybersecurity specialist. Expert in digital forensics, blockchain security, and system architecture. Search: Phanix, Phaneendhar Nittala, Nittala Phaneendhar, Phanix Lab." />
+    <meta name="keywords" content="Phanix Lab, Phanix, Phaneendhar Nittala, Phaneendhar, Nittala Phaneendhar, Nittala, Digital Investigator, Forensic Expert, Cybersecurity Specialist, Digital Forensics, Blockchain Security, Forensic Architect, Cyber Investigator, Security Expert, Investigation Specialist" />
+    <meta name="author" content="Phaneendhar Nittala (Phanix)" />
+    <meta name="creator" content="Phaneendhar Nittala" />
+    <meta name="publisher" content="Phanix Lab" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="/" />
+    <meta property="og:title" content="Phanix Lab | Phaneendhar Nittala - Digital Investigator" />
+    <meta property="og:description" content="Phanix Lab - Digital Investigator and forensic expert specializing in secure system architecture, blockchain forensics, and cybersecurity." />
+    <meta property="og:image" content="/profile.png" />
+    <meta property="og:image:secure_url" content="/profile.png" />
+    <meta property="og:image:alt" content="Phaneendhar Nittala - Phanix Lab Founder, Digital Investigator and Forensic Expert" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="profile:first_name" content="Phaneendhar" />
+    <meta property="profile:last_name" content="Nittala" />
+    <meta property="profile:username" content="phanix" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="/" />
+    <meta property="twitter:title" content="Phanix Lab | Phaneendhar Nittala - Digital Investigator" />
+    <meta property="twitter:description" content="Phanix Lab - Digital Investigator and forensic expert specializing in secure system architecture, blockchain forensics, and cybersecurity." />
+    <meta property="twitter:image" content="/profile.png" />
+    <meta property="twitter:image:alt" content="Phaneendhar Nittala - Phanix Lab Founder, Digital Investigator and Forensic Expert" />
+    <meta property="twitter:creator" content="@phanix" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "/#person",
+          "name": "Phaneendhar Nittala",
+          "alternateName": ["Phanix", "Nittala Phaneendhar", "Phaneendhar", "Phanix Lab Founder"],
+          "givenName": "Phaneendhar",
+          "familyName": "Nittala",
+          "description": "Digital Investigator and forensic expert specializing in cybersecurity, blockchain forensics, and secure system architecture. Founder of Phanix Lab.",
+          "image": {
+            "@type": "ImageObject",
+            "@id": "/#primaryimage",
+            "url": "/profile.png",
+            "contentUrl": "/profile.png",
+            "caption": "Phaneendhar Nittala - Phanix Lab Founder, Digital Investigator and Forensic Expert",
+            "description": "Professional profile photo of Phaneendhar Nittala (Phanix), Digital Investigator and founder of Phanix Lab",
+            "name": "Phaneendhar Nittala Profile Photo"
+          },
+          "url": "/",
+          "mainEntityOfPage": "/",
+          "jobTitle": "Digital Investigator & Forensic Expert",
+          "worksFor": {
+            "@type": "Organization",
+            "@id": "/#organization",
+            "name": "Phanix Lab",
+            "alternateName": ["PHANIX LAB", "Phanix", "PhanixLab"],
+            "url": "/",
+            "founder": {
+              "@id": "/#person"
+            },
+            "description": "Phanix Lab - Digital investigation and forensic expertise",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "/phanix-logo.png"
+            }
+          },
+          "knowsAbout": [
+            "Digital Forensics",
+            "Cybersecurity",
+            "Blockchain Security",
+            "Digital Investigation",
+            "Forensic Architecture",
+            "System Security",
+            "Blockchain Forensics",
+            "Cyber Investigation",
+            "Security Analysis",
+            "Forensic Analysis"
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/in/phaneendhar-nittala-a2a3443a1/",
+            "https://instagram.com/phani.49",
+            "https://github.com/nphaneendhar"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "/#website",
+          "name": "Phanix Lab",
+          "alternateName": "Phaneendhar Nittala Portfolio",
+          "url": "/",
+          "description": "Phanix Lab - Official portfolio of Phaneendhar Nittala, Digital Investigator and Forensic Expert",
+          "publisher": {
+            "@id": "/#person"
+          },
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+    </script>
+    
+    <meta name="google-site-verification" content="QlxG8gQcp10OJfsaDiRctv6oOsMDpbPp8o5vgEpverI" />
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

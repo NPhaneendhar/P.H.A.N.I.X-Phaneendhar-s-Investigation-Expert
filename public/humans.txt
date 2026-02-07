@@ -1,0 +1,19 @@
+/* TEAM */
+Developer: Phaneendhar Nittala
+Location: India
+LinkedIn: https://www.linkedin.com/in/phaneendhar-nittala-a2a3443a1/
+Instagram: https://instagram.com/phani.49
+GitHub: https://github.com/nphaneendhar
+
+/* THANKS */
+Name: Phanix Lab
+For: Digital Investigation & Forensic Excellence
+
+/* SITE */
+Last update: 2026/02/05
+Language: English
+Doctype: HTML5
+IDE: Visual Studio Code
+Components: React, Vite, Three.js
+Standards: HTML5, CSS3, ES6+
+Software: React 18, Framer Motion, Lenis Smooth Scroll

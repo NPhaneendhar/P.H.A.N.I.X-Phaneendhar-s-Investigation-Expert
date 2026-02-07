@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Allow: /images/
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+
+# Image crawlers
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemaps
+Sitemap: /sitemap.xml
