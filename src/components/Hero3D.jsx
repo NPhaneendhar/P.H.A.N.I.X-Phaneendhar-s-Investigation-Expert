@@ -130,9 +130,9 @@ function Windows11Desktop() {
   ];
 
   return (
-    <div style={{ 
-      width: "100%", 
-      height: "100%", 
+    <div style={{
+      width: "100%",
+      height: "100%",
       background: "linear-gradient(135deg, #005a9e 0%, #0078d4 50%, #00bcf2 100%)",
       position: "relative",
       overflow: "hidden",
@@ -167,34 +167,34 @@ function Windows11Desktop() {
       }} />
 
       {/* Desktop Icons */}
-      <div style={{ 
-        padding: "10px", 
-        display: "flex", 
-        flexDirection: "column", 
+      <div style={{
+        padding: "10px",
+        display: "flex",
+        flexDirection: "column",
         gap: "12px",
         flex: 1,
         overflow: "visible",
         zIndex: 2
       }}>
         {icons.map((icon, i) => (
-          <motion.div 
-            key={i} 
+          <motion.div
+            key={i}
             whileHover={{ backgroundColor: "rgba(255,255,255,0.1)", borderRadius: "6px" }}
             onClick={icon.action ? icon.action : undefined}
-            style={{ 
-              display: "flex", 
-              flexDirection: "column", 
-              alignItems: "center", 
-              width: "50px", 
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              width: "50px",
               textAlign: "center",
               cursor: icon.action ? "pointer" : "default",
               padding: "4px 0"
             }}
           >
             <div style={{ fontSize: "24px", marginBottom: "4px" }}>{icon.icon}</div>
-            <div style={{ 
-              background: "rgba(0,0,0,0.4)", 
-              padding: "2px 6px", 
+            <div style={{
+              background: "rgba(0,0,0,0.4)",
+              padding: "2px 6px",
               borderRadius: "4px",
               fontSize: "7px",
               whiteSpace: "nowrap",
@@ -205,10 +205,10 @@ function Windows11Desktop() {
       </div>
 
       {/* Taskbar */}
-      <div style={{ 
-        height: "28px", 
-        background: "rgba(20, 20, 20, 0.85)", 
-        backdropFilter: "blur(16px)", 
+      <div style={{
+        height: "28px",
+        background: "rgba(20, 20, 20, 0.85)",
+        backdropFilter: "blur(16px)",
         borderTop: "1px solid rgba(255,255,255,0.15)",
         display: "flex",
         alignItems: "center",
@@ -218,42 +218,42 @@ function Windows11Desktop() {
       }}>
         {/* Start Button & Apps (Centered Group) */}
         <div style={{ display: "flex", gap: "10px", position: "absolute", left: "50%", transform: "translateX(-50%)", alignItems: "center" }}>
-           <div style={{ fontSize: "14px", filter: "drop-shadow(0 0 4px rgba(0,188,242,0.6))" }}>💠</div>
-           <div style={{ fontSize: "14px", opacity: 0.9 }}>🔍</div>
-           <div style={{ fontSize: "14px", opacity: 0.9 }}>📂</div>
-           {/* TEXT-BASED MAIL BUTTON - GUARANTEED VISIBLE */}
-           <motion.div 
-             whileHover={{ scale: 1.1, backgroundColor: "rgba(255,255,255,0.2)" }}
-             whileTap={{ scale: 0.95 }}
-             onClick={() => window.location.href = "mailto:nittalaphaneendhar@gmail.com"}
-             style={{ 
-               fontSize: "8px", 
-               fontWeight: "700",
-               cursor: "pointer",
-               background: "linear-gradient(135deg, #0078d4, #00bcf2)",
-               padding: "3px 6px",
-               borderRadius: "3px",
-               color: "white",
-               letterSpacing: "0.5px",
-               boxShadow: "0 2px 4px rgba(0,0,0,0.3)"
-             }}
-             title="Send Email"
-           >
-             MAIL
-           </motion.div>
+          <div style={{ fontSize: "14px", filter: "drop-shadow(0 0 4px rgba(0,188,242,0.6))" }}>💠</div>
+          <div style={{ fontSize: "14px", opacity: 0.9 }}>🔍</div>
+          <div style={{ fontSize: "14px", opacity: 0.9 }}>📂</div>
+          {/* TEXT-BASED MAIL BUTTON - GUARANTEED VISIBLE */}
+          <motion.div
+            whileHover={{ scale: 1.1, backgroundColor: "rgba(255,255,255,0.2)" }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => window.location.href = "mailto:nittalaphaneendhar@gmail.com"}
+            style={{
+              fontSize: "8px",
+              fontWeight: "700",
+              cursor: "pointer",
+              background: "linear-gradient(135deg, #0078d4, #00bcf2)",
+              padding: "3px 6px",
+              borderRadius: "3px",
+              color: "white",
+              letterSpacing: "0.5px",
+              boxShadow: "0 2px 4px rgba(0,0,0,0.3)"
+            }}
+            title="Send Email"
+          >
+            MAIL
+          </motion.div>
         </div>
 
         {/* Start Spacer */}
         <div />
 
         {/* System Tray/Clock */}
-        <div style={{ 
-          display: "flex", 
-          flexDirection: "column", 
-          alignItems: "flex-end", 
-          fontSize: "7px", 
+        <div style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-end",
+          fontSize: "7px",
           lineHeight: "1.2",
-          opacity: 0.95 
+          opacity: 0.95
         }}>
           <div style={{ fontWeight: "600" }}>{formatTime(time)}</div>
           <div style={{ opacity: 0.8 }}>{formatDate(time)}</div>
@@ -329,8 +329,8 @@ export default function Hero3D({ onReady, onAboutClick }) {
               alignContent: isMobile ? "center" : "flex-start",
               justifyContent: "center",
               gap: isMobile ? "40px" : "clamp(24px, 5vw, 50px)",
-              padding: isMobile 
-                ? "clamp(60px, 10vh, 80px) 20px" 
+              padding: isMobile
+                ? "clamp(60px, 10vh, 80px) 20px"
                 : "clamp(80px, 12vh, 140px) clamp(16px, 5%, 8%) clamp(60px, 10vh, 100px)",
               boxSizing: "border-box",
               willChange: "transform, opacity",
@@ -347,34 +347,34 @@ export default function Hero3D({ onReady, onAboutClick }) {
             }}
           >
             {/* Text Content */}
-            <div style={{ 
-              flex: "1 1 320px", 
-              maxWidth: "600px", 
+            <div style={{
+              flex: "1 1 320px",
+              maxWidth: "600px",
               minWidth: "280px",
-              pointerEvents: "auto" 
+              pointerEvents: "auto"
             }}>
               <motion.div
                 variants={{
-                  hidden: { 
-                    opacity: 0, 
-                    y: 60, 
+                  hidden: {
+                    opacity: 0,
+                    y: 60,
                     scale: 0.9,
                     filter: "blur(20px)",
                     rotateX: -15
                   },
-                  visible: { 
-                    opacity: 1, 
-                    y: 0, 
+                  visible: {
+                    opacity: 1,
+                    y: 0,
                     scale: 1,
                     filter: "blur(0px)",
                     rotateX: 0,
-                    transition: { 
-                      duration: 1.2, 
+                    transition: {
+                      duration: 1.2,
                       ease: [0.16, 1, 0.3, 1],
                       type: "spring",
                       stiffness: 70,
                       damping: 24
-                    } 
+                    }
                   },
                 }}
                 style={{ willChange: "transform, opacity, filter" }}
@@ -391,14 +391,14 @@ export default function Hero3D({ onReady, onAboutClick }) {
                   }}
                   aria-label="Phaneendhar Nittala - Digital Investigator"
                 >
-                  <motion.span 
+                  <motion.span
                     initial={{ opacity: 0.3 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
                   >
                     HELLO,
                   </motion.span> I'M <br />
-                  <span style={{ 
+                  <span style={{
                     background: "linear-gradient(90deg, #6d7cff, #be94ff)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent"
@@ -407,18 +407,18 @@ export default function Hero3D({ onReady, onAboutClick }) {
                   </span>
                 </h1>
               </motion.div>
-              
+
               <motion.div
                 variants={{
                   hidden: { scaleX: 0, opacity: 0 },
-                  visible: { 
-                    scaleX: 1, 
-                    opacity: 1, 
-                    transition: { 
-                      duration: 1.4, 
+                  visible: {
+                    scaleX: 1,
+                    opacity: 1,
+                    transition: {
+                      duration: 1.4,
                       ease: [0.16, 1, 0.3, 1],
                       delay: 0.3
-                    } 
+                    }
                   }
                 }}
                 style={{
@@ -434,16 +434,16 @@ export default function Hero3D({ onReady, onAboutClick }) {
               <motion.div
                 variants={{
                   hidden: { opacity: 0, y: 40, scale: 0.95, filter: "blur(15px)" },
-                  visible: { 
-                    opacity: 1, 
-                    y: 0, 
+                  visible: {
+                    opacity: 1,
+                    y: 0,
                     scale: 1,
                     filter: "blur(0px)",
-                    transition: { 
-                      duration: 1.3, 
+                    transition: {
+                      duration: 1.3,
                       ease: [0.16, 1, 0.3, 1],
                       delay: 0.4
-                    } 
+                    }
                   },
                 }}
               >
@@ -468,21 +468,21 @@ export default function Hero3D({ onReady, onAboutClick }) {
                 <motion.div
                   initial="hidden"
                   animate={revealComplete ? "visible" : "hidden"}
-                  style={{ 
-                    display: "flex", 
-                    gap: "20px", 
-                    alignItems: "center", 
+                  style={{
+                    display: "flex",
+                    gap: "20px",
+                    alignItems: "center",
                     flexWrap: "wrap",
                     marginTop: "20px"
                   }}
                   variants={{
                     hidden: { opacity: 0 },
-                    visible: { 
-                      opacity: 1, 
-                      transition: { 
+                    visible: {
+                      opacity: 1,
+                      transition: {
                         staggerChildren: 0.12,
                         delayChildren: 0.6
-                      } 
+                      }
                     }
                   }}
                 >
@@ -496,17 +496,17 @@ export default function Hero3D({ onReady, onAboutClick }) {
                       key={idx}
                       variants={{
                         hidden: { scale: 0, rotate: -180, opacity: 0, y: 20 },
-                        visible: { 
-                          scale: 1, 
-                          rotate: 0, 
-                          opacity: 1, 
+                        visible: {
+                          scale: 1,
+                          rotate: 0,
+                          opacity: 1,
                           y: 0,
-                          transition: { 
-                            type: "spring", 
-                            stiffness: 260, 
+                          transition: {
+                            type: "spring",
+                            stiffness: 260,
                             damping: 15,
                             mass: 0.8
-                          } 
+                          }
                         }
                       }}
                     >
@@ -627,20 +627,20 @@ function RetroMonitor({ onAboutClick, isMobile }) {
     }, 1500);
     return () => clearInterval(interval);
   }, [screenOn]);
-  
+
   // Thoughtful boot sequence
   // PHANIX Custom Boot Animation Sequence
   useEffect(() => {
     if (!screenOn) return;
-    
+
     // Simulate BIOS + Windows Loading
     const timer = setTimeout(() => {
       setBootComplete(true);
     }, 4000); // 4 seconds of PHANIX splash + Spinner
-    
+
     return () => clearTimeout(timer);
   }, [screenOn]);
-  
+
   // Subtle glitch effect
   useEffect(() => {
     if (!screenOn) return;
@@ -686,18 +686,18 @@ function RetroMonitor({ onAboutClick, isMobile }) {
   };
 
   return (
-    <motion.div 
+    <motion.div
       ref={monitorRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       initial={{ opacity: 0, y: 40 }}
-      animate={{ 
-        opacity: 1, 
+      animate={{
+        opacity: 1,
         y: 0,
         rotateY: mousePos.x,
         rotateX: mousePos.y,
       }}
-      transition={{ 
+      transition={{
         opacity: { duration: 1.2, ease: [0.16, 1, 0.3, 1] },
         y: { duration: 1.4, ease: [0.16, 1, 0.3, 1] },
         rotateY: { type: "spring", stiffness: 100, damping: 30 },
@@ -743,7 +743,7 @@ function RetroMonitor({ onAboutClick, isMobile }) {
             whileHover={{ scale: 1.15, boxShadow: "0 0 15px rgba(59, 130, 246, 0.6)" }}
             whileTap={{ scale: 0.85 }}
             animate={{
-              boxShadow: screenOn 
+              boxShadow: screenOn
                 ? ["0 0 8px #3b82f6", "0 0 15px #3b82f6", "0 0 8px #3b82f6"]
                 : "0 0 3px #222"
             }}
@@ -752,7 +752,7 @@ function RetroMonitor({ onAboutClick, isMobile }) {
               width: "clamp(16px, 2.2vw, 26px)",
               height: "clamp(16px, 2.2vw, 26px)",
               borderRadius: "50%",
-              background: screenOn 
+              background: screenOn
                 ? "radial-gradient(circle, #3b82f6 0%, #1d4ed8 100%)"
                 : "radial-gradient(circle, #333 0%, #1a1a1a 100%)",
               border: "2px solid",
@@ -766,7 +766,7 @@ function RetroMonitor({ onAboutClick, isMobile }) {
             }}
             title="Power ON/OFF"
           >
-            <svg width="50%" height="50%" viewBox="0 0 24 24" fill="none" 
+            <svg width="50%" height="50%" viewBox="0 0 24 24" fill="none"
               stroke={screenOn ? "#fff" : "#555"} strokeWidth="3" strokeLinecap="round">
               <path d="M12 2v8" />
               <path d="M17 4a8 8 0 1 1-10 0" />
@@ -849,7 +849,7 @@ function RetroMonitor({ onAboutClick, isMobile }) {
         {/* Side Hardware Accents - PC Style */}
         <motion.div
           animate={{
-            background: screenOn 
+            background: screenOn
               ? ["linear-gradient(180deg, #0078d4, #00bcf2, #0078d4)"]
               : "linear-gradient(180deg, #1a1a1a, #1a1a1a)",
             backgroundSize: ["100% 200%"],
@@ -888,7 +888,7 @@ function RetroMonitor({ onAboutClick, isMobile }) {
 
         {/* Status LED */}
         <motion.div
-          animate={{ 
+          animate={{
             opacity: screenOn ? [0.6, 1, 0.6] : 0.2,
             backgroundColor: screenOn ? "#0078d4" : "#111",
             boxShadow: screenOn ? ["0 0 5px #0078d4", "0 0 12px #0078d4", "0 0 5px #0078d4"] : "none",
@@ -907,533 +907,533 @@ function RetroMonitor({ onAboutClick, isMobile }) {
 
       {/* Monitor & Peripherals Column */}
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: 1 }}>
-      {/* Ambient Glow */}
-      <motion.div
-        animate={{ 
-          opacity: screenOn ? [0.15, 0.3, 0.15] : 0,
-          scale: screenOn ? [1, 1.05, 1] : 0.8,
-        }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        style={{
-          position: "absolute",
-          top: "45%",
-          left: "50%",
-          width: "140%",
-          height: "140%",
-          transform: "translate(-50%, -50%)",
-          background: "radial-gradient(ellipse, rgba(0, 120, 212, 0.2) 0%, rgba(0, 30, 60, 0.1) 40%, transparent 70%)",
-          filter: "blur(60px)",
-          pointerEvents: "none",
-          zIndex: -1,
-        }}
-      />
+        {/* Ambient Glow */}
+        <motion.div
+          animate={{
+            opacity: screenOn ? [0.15, 0.3, 0.15] : 0,
+            scale: screenOn ? [1, 1.05, 1] : 0.8,
+          }}
+          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+          style={{
+            position: "absolute",
+            top: "45%",
+            left: "50%",
+            width: "140%",
+            height: "140%",
+            transform: "translate(-50%, -50%)",
+            background: "radial-gradient(ellipse, rgba(0, 120, 212, 0.2) 0%, rgba(0, 30, 60, 0.1) 40%, transparent 70%)",
+            filter: "blur(60px)",
+            pointerEvents: "none",
+            zIndex: -1,
+          }}
+        />
 
-      {/* Modern Windows PC Monitor */}
-      <motion.div
-        animate={{ 
-          boxShadow: screenOn 
-            ? "0 40px 120px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255,255,255,0.05)"
-            : "0 30px 80px rgba(0, 0, 0, 0.5)"
-        }}
-        transition={{ duration: 0.8 }}
-        style={{
-          background: "linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%)",
-          borderRadius: "8px",
-          padding: "2px",
-          position: "relative",
-          width: "clamp(260px, 85vw, 420px)",
-          height: "clamp(190px, 60vw, 300px)",
-          display: "flex",
-          flexDirection: "column",
-          border: "1px solid #333",
-          transform: isMobile ? "scale(1.15) translateY(-20px)" : "none",
-          transformOrigin: "center",
-        }}
-      >
-        {/* Screen Container - Edge to Edge */}
-        <div style={{
-          background: "#000",
-          borderRadius: "12px",
-          padding: "clamp(8px, 1.2vw, 12px)",
-          overflow: "hidden",
-          position: "relative",
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
-        }}>
-          {/* Display Screen */}
-          <motion.div 
-            animate={{
-              boxShadow: screenOn 
-                ? "inset 0 0 40px rgba(100, 200, 255, 0.1)"
-                : "inset 0 0 30px rgba(0, 0, 0, 0.8)"
-            }}
-            style={{
-              background: screenOn 
-                ? "linear-gradient(180deg, #0a1628 0%, #061018 100%)"
-                : "#000",
-              borderRadius: "8px",
-              padding: "clamp(10px, 1.2vw, 16px)",
-              height: "100%",
-              width: "100%",
-              position: "relative",
-              overflow: "hidden",
-            }}
-          >
-            {/* Screen Turn On Flash */}
+        {/* Modern Windows PC Monitor */}
+        <motion.div
+          animate={{
+            boxShadow: screenOn
+              ? "0 40px 120px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255,255,255,0.05)"
+              : "0 30px 80px rgba(0, 0, 0, 0.5)"
+          }}
+          transition={{ duration: 0.8 }}
+          style={{
+            background: "linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%)",
+            borderRadius: "8px",
+            padding: "2px",
+            position: "relative",
+            width: "clamp(260px, 85vw, 420px)",
+            height: "clamp(190px, 60vw, 300px)",
+            display: "flex",
+            flexDirection: "column",
+            border: "1px solid #333",
+            transform: isMobile ? "scale(1.15) translateY(-20px)" : "none",
+            transformOrigin: "center",
+          }}
+        >
+          {/* Screen Container - Edge to Edge */}
+          <div style={{
+            background: "#000",
+            borderRadius: "12px",
+            padding: "clamp(8px, 1.2vw, 12px)",
+            overflow: "hidden",
+            position: "relative",
+            flex: 1,
+            display: "flex",
+            flexDirection: "column",
+          }}>
+            {/* Display Screen */}
             <motion.div
-              initial={{ opacity: 1, scaleY: 0.01 }}
-              animate={{ 
-                opacity: screenOn ? 0 : 1,
-                scaleY: screenOn ? 1 : 0.01,
+              animate={{
+                boxShadow: screenOn
+                  ? "inset 0 0 40px rgba(100, 200, 255, 0.1)"
+                  : "inset 0 0 30px rgba(0, 0, 0, 0.8)"
               }}
-              transition={{ duration: 0.3 }}
               style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                background: "#fff",
-                zIndex: 10,
+                background: screenOn
+                  ? "linear-gradient(180deg, #0a1628 0%, #061018 100%)"
+                  : "#000",
+                borderRadius: "8px",
+                padding: "clamp(10px, 1.2vw, 16px)",
+                height: "100%",
+                width: "100%",
+                position: "relative",
+                overflow: "hidden",
               }}
-            />
-            
-            {/* Scanlines Overlay */}
-            <div style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              background: `repeating-linear-gradient(
-                0deg,
-                transparent,
-                transparent 1px,
-                rgba(0, 0, 0, 0.4) 1px,
-                rgba(0, 0, 0, 0.4) 2px
-              )`,
-              pointerEvents: "none",
-              zIndex: 3,
-            }} />
-            
-            {/* CRT Curve Reflection */}
-            <div style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              right: 0,
-              height: "50%",
-              background: "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, transparent 100%)",
-              borderRadius: "12px 12px 0 0",
-              pointerEvents: "none",
-              zIndex: 2,
-            }} />
-            
-            {/* Screen Flicker */}
-            <motion.div
-              animate={{ opacity: [1, 0.96, 1, 0.98, 1, 0.97, 1] }}
-              transition={{ duration: 0.15, repeat: Infinity, repeatDelay: 0.8 }}
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                background: "rgba(0, 255, 100, 0.02)",
-                pointerEvents: "none",
-                zIndex: 1,
-              }}
-            />
-            
-            {/* VHS Glitch Effect - Multiple Layers */}
-            {glitchActive && (
-              <>
-                <motion.div
-                  initial={{ x: -10 }}
-                  animate={{ x: 10 }}
-                  transition={{ duration: 0.05 }}
-                  style={{
-                    position: "absolute",
-                    top: `${20 + Math.random() * 60}%`,
-                    left: 0,
-                    right: 0,
-                    height: `${10 + Math.random() * 20}px`,
-                    background: "linear-gradient(90deg, rgba(255,0,0,0.3), rgba(0,255,255,0.3))",
-                    zIndex: 4,
-                  }} 
-                />
-                <div style={{
+            >
+              {/* Screen Turn On Flash */}
+              <motion.div
+                initial={{ opacity: 1, scaleY: 0.01 }}
+                animate={{
+                  opacity: screenOn ? 0 : 1,
+                  scaleY: screenOn ? 1 : 0.01,
+                }}
+                transition={{ duration: 0.3 }}
+                style={{
                   position: "absolute",
                   top: 0,
                   left: 0,
                   right: 0,
                   bottom: 0,
-                  background: `
-                    linear-gradient(90deg, rgba(255,0,0,0.1) 33%, rgba(0,255,0,0.1) 33%, rgba(0,255,0,0.1) 66%, rgba(0,0,255,0.1) 66%)
-                  `,
-                  zIndex: 4,
-                }} />
-              </>
-            )}
-            {/* TV Static Effect */}
-            {showStatic && (
+                  background: "#fff",
+                  zIndex: 10,
+                }}
+              />
+
+              {/* Scanlines Overlay */}
               <div style={{
                 position: "absolute",
                 top: 0,
                 left: 0,
                 right: 0,
                 bottom: 0,
-                background: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-                opacity: 0.8,
-                zIndex: 10,
+                background: `repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 1px,
+                rgba(0, 0, 0, 0.4) 1px,
+                rgba(0, 0, 0, 0.4) 2px
+              )`,
+                pointerEvents: "none",
+                zIndex: 3,
               }} />
-            )}
-            
-            {/* Screen Glow */}
-            <div style={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              width: "200%",
-              height: "200%",
-              transform: "translate(-50%, -50%)",
-              background: screenOn 
-                ? "radial-gradient(ellipse, rgba(0, 120, 212, 0.08) 0%, transparent 60%)"
-                : "none",
-              pointerEvents: "none",
-            }} />
-            
-            {/* Terminal Content */}
-            <div style={{
-              position: "relative",
-              zIndex: 1,
-              height: "100%",
-              display: "flex",
-              flexDirection: "column",
-              overflowY: "hidden",
-            }}>
-              {/* PHANIX BIOS SPLASH */}
-              {!bootComplete && screenOn && (
-                <div style={{
-                  height: "100%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  flexDirection: "column",
-                  background: "#000",
-                }}>
+
+              {/* CRT Curve Reflection */}
+              <div style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                right: 0,
+                height: "50%",
+                background: "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, transparent 100%)",
+                borderRadius: "12px 12px 0 0",
+                pointerEvents: "none",
+                zIndex: 2,
+              }} />
+
+              {/* Screen Flicker */}
+              <motion.div
+                animate={{ opacity: [1, 0.96, 1, 0.98, 1, 0.97, 1] }}
+                transition={{ duration: 0.15, repeat: Infinity, repeatDelay: 0.8 }}
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  background: "rgba(0, 255, 100, 0.02)",
+                  pointerEvents: "none",
+                  zIndex: 1,
+                }}
+              />
+
+              {/* VHS Glitch Effect - Multiple Layers */}
+              {glitchActive && (
+                <>
                   <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5, delay: 0.5 }}
+                    initial={{ x: -10 }}
+                    animate={{ x: 10 }}
+                    transition={{ duration: 0.05 }}
                     style={{
-                      fontSize: "clamp(24px, 4vw, 48px)",
-                      color: "white",
-                      fontWeight: "900",
-                      letterSpacing: "8px",
-                      textTransform: "uppercase",
-                      fontFamily: "'Segoe UI Variable', system-ui, sans-serif",
-                    }}
-                  >
-                    PHANIX
-                  </motion.div>
-                  
-                  {/* Modern Windows Spinner */}
-                  <motion.div
-                    initial={{ opacity: 0, rotate: 0 }}
-                    animate={{ opacity: 1, rotate: 360 }}
-                    transition={{ 
-                      opacity: { duration: 0.5, delay: 1.5 },
-                      rotate: { duration: 1, repeat: Infinity, ease: "linear" }
-                    }}
-                    style={{
-                      marginTop: "40px",
-                      width: "30px",
-                      height: "30px",
-                      border: "2px solid rgba(255, 255, 255, 0.1)",
-                      borderTopColor: "#fff",
-                      borderRadius: "50%",
+                      position: "absolute",
+                      top: `${20 + Math.random() * 60}%`,
+                      left: 0,
+                      right: 0,
+                      height: `${10 + Math.random() * 20}px`,
+                      background: "linear-gradient(90deg, rgba(255,0,0,0.3), rgba(0,255,255,0.3))",
+                      zIndex: 4,
                     }}
                   />
-                  
+                  <div style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    background: `
+                    linear-gradient(90deg, rgba(255,0,0,0.1) 33%, rgba(0,255,0,0.1) 33%, rgba(0,255,0,0.1) 66%, rgba(0,0,255,0.1) 66%)
+                  `,
+                    zIndex: 4,
+                  }} />
+                </>
+              )}
+              {/* TV Static Effect */}
+              {showStatic && (
+                <div style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  background: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+                  opacity: 0.8,
+                  zIndex: 10,
+                }} />
+              )}
+
+              {/* Screen Glow */}
+              <div style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                width: "200%",
+                height: "200%",
+                transform: "translate(-50%, -50%)",
+                background: screenOn
+                  ? "radial-gradient(ellipse, rgba(0, 120, 212, 0.08) 0%, transparent 60%)"
+                  : "none",
+                pointerEvents: "none",
+              }} />
+
+              {/* Terminal Content */}
+              <div style={{
+                position: "relative",
+                zIndex: 1,
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                overflowY: "hidden",
+              }}>
+                {/* PHANIX BIOS SPLASH */}
+                {!bootComplete && screenOn && (
+                  <div style={{
+                    height: "100%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                    background: "#000",
+                  }}>
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.5, delay: 0.5 }}
+                      style={{
+                        fontSize: "clamp(24px, 4vw, 48px)",
+                        color: "white",
+                        fontWeight: "900",
+                        letterSpacing: "8px",
+                        textTransform: "uppercase",
+                        fontFamily: "'Segoe UI Variable', system-ui, sans-serif",
+                      }}
+                    >
+                      PHANIX
+                    </motion.div>
+
+                    {/* Modern Windows Spinner */}
+                    <motion.div
+                      initial={{ opacity: 0, rotate: 0 }}
+                      animate={{ opacity: 1, rotate: 360 }}
+                      transition={{
+                        opacity: { duration: 0.5, delay: 1.5 },
+                        rotate: { duration: 1, repeat: Infinity, ease: "linear" }
+                      }}
+                      style={{
+                        marginTop: "40px",
+                        width: "30px",
+                        height: "30px",
+                        border: "2px solid rgba(255, 255, 255, 0.1)",
+                        borderTopColor: "#fff",
+                        borderRadius: "50%",
+                      }}
+                    />
+
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.5, delay: 1.2 }}
+                      style={{
+                        position: "absolute",
+                        bottom: "10%",
+                        fontSize: "10px",
+                        color: "#666",
+                        letterSpacing: "2px",
+                        fontFamily: "monospace"
+                      }}
+                    >
+                      SYSTEM BOOTING...
+                    </motion.div>
+                  </div>
+                )}
+
+                {/* Windows 11 Desktop Experience */}
+                {bootComplete && screenOn && (
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 1.2 }}
+                    transition={{ duration: 1 }}
                     style={{
                       position: "absolute",
-                      bottom: "10%",
-                      fontSize: "10px",
-                      color: "#666",
-                      letterSpacing: "2px",
-                      fontFamily: "monospace"
+                      top: "clamp(2px, 0.4vw, 4px)",
+                      left: "clamp(2px, 0.4vw, 4px)",
+                      right: "clamp(2px, 0.4vw, 4px)",
+                      bottom: "clamp(10px, 1.5vw, 15px)",
+                      borderRadius: "1px",
+                      overflow: "hidden"
                     }}
                   >
-                    SYSTEM BOOTING...
+                    <Windows11Desktop />
                   </motion.div>
-                </div>
-              )}
-              
-              {/* Windows 11 Desktop Experience */}
-              {bootComplete && screenOn && (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 1 }}
-                  style={{
-                    position: "absolute",
-                    top: "clamp(2px, 0.4vw, 4px)",
-                    left: "clamp(2px, 0.4vw, 4px)",
-                    right: "clamp(2px, 0.4vw, 4px)",
-                    bottom: "clamp(10px, 1.5vw, 15px)",
-                    borderRadius: "1px",
-                    overflow: "hidden"
-                  }}
-                >
-                  <Windows11Desktop />
-                </motion.div>
-              )}
-            </div>
-          </motion.div>
-        </div>
-        
-        {/* Monitor Branding */}
-        <div style={{
-          position: "absolute",
-          bottom: "clamp(6px, 0.8vw, 10px)",
-          left: "clamp(12px, 1.5vw, 20px)",
-          fontSize: "clamp(8px, 0.6vw, 10px)",
-          color: "#444",
-          fontFamily: "'Segoe UI Variable', sans-serif",
-          fontWeight: "bold",
-          letterSpacing: "1px",
-          textTransform: "uppercase",
-          pointerEvents: "none"
-        }}>
-          PHANIX SERIES
-        </div>
-        
-        {/* Power Button - Click to toggle screen */}
-        <motion.button
-          onClick={handlePowerToggle}
-          whileHover={{ scale: 1.1, backgroundColor: screenOn ? "#0078d4" : "#444" }}
-          whileTap={{ scale: 0.9 }}
-          animate={{ 
-            boxShadow: screenOn 
-              ? ["0 0 8px #0078d4", "0 0 15px #0078d4"]
-              : "0 0 2px #222"
-          }}
-          transition={{ duration: 2, repeat: screenOn ? Infinity : 0 }}
-          style={{
-            position: "absolute",
-            bottom: "clamp(10px, 1.2vw, 15px)",
-            right: "clamp(12px, 1.5vw, 20px)",
-            width: "12px",
-            height: "12px",
-            borderRadius: "50%",
-            background: screenOn ? "#0078d4" : "#222",
-            border: "none",
-            cursor: "pointer",
-            outline: "none",
-            zIndex: 10,
-          }}
-          title={screenOn ? "Power Off" : "Power On"}
-        />
-        
-        {/* Vent Lines */}
-        <div style={{
-          position: "absolute",
-          top: "50%",
-          right: "clamp(4px, 0.5vw, 8px)",
-          transform: "translateY(-50%)",
-          display: "flex",
-          flexDirection: "column",
-          gap: "3px",
-        }}>
-          {[...Array(6)].map((_, i) => (
-            <div key={i} style={{
-              width: "clamp(2px, 0.3vw, 4px)",
-              height: "clamp(10px, 1.2vw, 15px)",
-              background: "linear-gradient(180deg, #3a3a3a 0%, #1a1a1a 100%)",
-              borderRadius: "1px",
-            }} />
-          ))}
-        </div>
-      </motion.div>
-      
-      {/* Pro Monitor Stand */}
-      <div style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        transform: isMobile ? "scale(0.85)" : "none",
-      }}>
-        {/* Solid Neck */}
-        <div style={{
-          width: "clamp(30px, 4vw, 50px)",
-          height: "clamp(20px, 3vw, 30px)",
-          background: "linear-gradient(90deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%)",
-          borderRadius: "0 0 4px 4px",
-        }} />
-        {/* Flat Rectangular Base */}
-        <div style={{
-          width: "clamp(120px, 15vw, 200px)",
-          height: "clamp(4px, 0.6vw, 8px)",
-          background: "#1a1a1a",
-          borderRadius: "4px 4px 2px 2px",
-          boxShadow: "0 4px 15px rgba(0,0,0,0.5)",
-        }} />
-      </div>
-      
-      {/* Desk Surface / Grounding Shadow */}
-      <div style={{
-        position: "absolute",
-        bottom: "-10px",
-        left: "-20%",
-        right: "-20%",
-        height: "20px",
-        background: "radial-gradient(ellipse at center, rgba(0,0,0,0.4) 0%, transparent 70%)",
-        filter: "blur(5px)",
-        zIndex: -2,
-      }} />
-
-      {/* Modern PC Peripherals Row */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        style={{
-          marginTop: "clamp(10px, 1.5vw, 16px)",
-          display: "flex",
-          alignItems: "center",
-          gap: "clamp(10px, 1.5vw, 20px)",
-          position: "relative",
-          transform: isMobile ? "scale(0.8)" : "none",
-        }}
-      >
-        {/* Gaming Headset */}
-        <motion.div
-          whileHover={{ y: -2 }}
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            marginRight: "clamp(4px, 0.6vw, 8px)",
-          }}
-        >
-          <div style={{
-            width: "clamp(18px, 2.5vw, 28px)",
-            height: "clamp(12px, 1.6vw, 16px)",
-            borderRadius: "8px 8px 0 0",
-            border: "2px solid #222",
-            background: "#111",
-          }} />
-          <div style={{
-            width: "4px",
-            height: "25px",
-            background: "#1a1a1a",
-          }} />
-          <div style={{
-            width: "18px",
-            height: "4px",
-            background: "#0d0d0d",
-          }} />
-        </motion.div>
-
-        {/* Carbon Mechanical Keyboard */}
-        <div 
-          style={{
-            background: "linear-gradient(180deg, #121212 0%, #1a1a1a 100%)",
-            borderRadius: "6px",
-            padding: "8px 12px",
-            boxShadow: "0 8px 30px rgba(0,0,0,0.4)",
-            border: "1px solid #222",
-          }}
-        >
-          {[9, 8, 7].map((keysInRow, rowIdx) => (
-            <div 
-              key={rowIdx}
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                gap: "3px",
-                marginBottom: rowIdx < 2 ? "3px" : 0,
-              }}
-            >
-              {[...Array(keysInRow)].map((_, keyIdx) => {
-                const isActive = typingKeys.length > 0 && 
-                  typingKeys[typingKeys.length - 1] * 30 % (rowIdx * 9 + keyIdx + 1) < 0.4;
-                return (
-                  <motion.div
-                    key={keyIdx}
-                    animate={{
-                      backgroundColor: isActive && screenOn ? "#0078d4" : "#222",
-                      boxShadow: isActive && screenOn 
-                        ? "0 0 6px rgba(0, 120, 212, 0.8)" 
-                        : "inset 0 1px 1px rgba(255,255,255,0.05)",
-                    }}
-                    transition={{ duration: 0.1 }}
-                    style={{
-                      width: "clamp(8px, 1vw, 12px)",
-                      height: "clamp(8px, 1vw, 12px)",
-                      borderRadius: "1px",
-                      border: "1px solid #111",
-                    }}
-                  />
-                );
-              })}
-            </div>
-          ))}
-          <div style={{ display: "flex", justifyContent: "center", marginTop: "3px" }}>
-            <motion.div
-              animate={{
-                backgroundColor: typingKeys.length > 0 && Math.random() > 0.8 && screenOn ? "#0078d4" : "#222",
-              }}
-              style={{
-                width: "clamp(40px, 6vw, 70px)",
-                height: "clamp(8px, 1vw, 12px)",
-                borderRadius: "1px",
-                border: "1px solid #111",
-              }}
-            />
+                )}
+              </div>
+            </motion.div>
           </div>
-        </div>
 
-        {/* Gaming Mouse */}
-        <motion.div
-          whileHover={{ y: -3, boxShadow: "0 8px 20px rgba(0,0,0,0.4)" }}
-          whileTap={{ scale: 0.95 }}
-          style={{
-            background: "linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%)",
-            borderRadius: "10px",
-            width: "clamp(26px, 3.5vw, 42px)",
-            height: "clamp(42px, 5.5vw, 62px)",
-            position: "relative",
-            boxShadow: "0 4px 15px rgba(0,0,0,0.3)",
-            border: "1px solid #222",
-            cursor: "pointer",
-            flexShrink: 0,
-          }}
-        >
-          <motion.div
+          {/* Monitor Branding */}
+          <div style={{
+            position: "absolute",
+            bottom: "clamp(6px, 0.8vw, 10px)",
+            left: "clamp(12px, 1.5vw, 20px)",
+            fontSize: "clamp(8px, 0.6vw, 10px)",
+            color: "#444",
+            fontFamily: "'Segoe UI Variable', sans-serif",
+            fontWeight: "bold",
+            letterSpacing: "1px",
+            textTransform: "uppercase",
+            pointerEvents: "none"
+          }}>
+            PHANIX SERIES
+          </div>
+
+          {/* Power Button - Click to toggle screen */}
+          <motion.button
+            onClick={handlePowerToggle}
+            whileHover={{ scale: 1.1, backgroundColor: screenOn ? "#0078d4" : "#444" }}
+            whileTap={{ scale: 0.9 }}
             animate={{
-              boxShadow: screenOn ? "0 0 8px #0078d4" : "none",
-              backgroundColor: screenOn ? "#0078d4" : "#222",
+              boxShadow: screenOn
+                ? ["0 0 8px #0078d4", "0 0 15px #0078d4"]
+                : "0 0 2px #222"
             }}
+            transition={{ duration: 2, repeat: screenOn ? Infinity : 0 }}
             style={{
               position: "absolute",
-              top: "20%",
-              left: "50%",
-              transform: "translateX(-50%)",
-              width: "2px",
-              height: "8px",
-              borderRadius: "1px",
+              bottom: "clamp(10px, 1.2vw, 15px)",
+              right: "clamp(12px, 1.5vw, 20px)",
+              width: "12px",
+              height: "12px",
+              borderRadius: "50%",
+              background: screenOn ? "#0078d4" : "#222",
+              border: "none",
+              cursor: "pointer",
+              outline: "none",
+              zIndex: 10,
             }}
+            title={screenOn ? "Power Off" : "Power On"}
           />
+
+          {/* Vent Lines */}
+          <div style={{
+            position: "absolute",
+            top: "50%",
+            right: "clamp(4px, 0.5vw, 8px)",
+            transform: "translateY(-50%)",
+            display: "flex",
+            flexDirection: "column",
+            gap: "3px",
+          }}>
+            {[...Array(6)].map((_, i) => (
+              <div key={i} style={{
+                width: "clamp(2px, 0.3vw, 4px)",
+                height: "clamp(10px, 1.2vw, 15px)",
+                background: "linear-gradient(180deg, #3a3a3a 0%, #1a1a1a 100%)",
+                borderRadius: "1px",
+              }} />
+            ))}
+          </div>
         </motion.div>
-      </motion.div>
-      
+
+        {/* Pro Monitor Stand */}
+        <div style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          transform: isMobile ? "scale(0.85)" : "none",
+        }}>
+          {/* Solid Neck */}
+          <div style={{
+            width: "clamp(30px, 4vw, 50px)",
+            height: "clamp(20px, 3vw, 30px)",
+            background: "linear-gradient(90deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%)",
+            borderRadius: "0 0 4px 4px",
+          }} />
+          {/* Flat Rectangular Base */}
+          <div style={{
+            width: "clamp(120px, 15vw, 200px)",
+            height: "clamp(4px, 0.6vw, 8px)",
+            background: "#1a1a1a",
+            borderRadius: "4px 4px 2px 2px",
+            boxShadow: "0 4px 15px rgba(0,0,0,0.5)",
+          }} />
+        </div>
+
+        {/* Desk Surface / Grounding Shadow */}
+        <div style={{
+          position: "absolute",
+          bottom: "-10px",
+          left: "-20%",
+          right: "-20%",
+          height: "20px",
+          background: "radial-gradient(ellipse at center, rgba(0,0,0,0.4) 0%, transparent 70%)",
+          filter: "blur(5px)",
+          zIndex: -2,
+        }} />
+
+        {/* Modern PC Peripherals Row */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          style={{
+            marginTop: "clamp(10px, 1.5vw, 16px)",
+            display: "flex",
+            alignItems: "center",
+            gap: "clamp(10px, 1.5vw, 20px)",
+            position: "relative",
+            transform: isMobile ? "scale(0.8)" : "none",
+          }}
+        >
+          {/* Gaming Headset */}
+          <motion.div
+            whileHover={{ y: -2 }}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              marginRight: "clamp(4px, 0.6vw, 8px)",
+            }}
+          >
+            <div style={{
+              width: "clamp(18px, 2.5vw, 28px)",
+              height: "clamp(12px, 1.6vw, 16px)",
+              borderRadius: "8px 8px 0 0",
+              border: "2px solid #222",
+              background: "#111",
+            }} />
+            <div style={{
+              width: "4px",
+              height: "25px",
+              background: "#1a1a1a",
+            }} />
+            <div style={{
+              width: "18px",
+              height: "4px",
+              background: "#0d0d0d",
+            }} />
+          </motion.div>
+
+          {/* Carbon Mechanical Keyboard */}
+          <div
+            style={{
+              background: "linear-gradient(180deg, #121212 0%, #1a1a1a 100%)",
+              borderRadius: "6px",
+              padding: "8px 12px",
+              boxShadow: "0 8px 30px rgba(0,0,0,0.4)",
+              border: "1px solid #222",
+            }}
+          >
+            {[9, 8, 7].map((keysInRow, rowIdx) => (
+              <div
+                key={rowIdx}
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  gap: "3px",
+                  marginBottom: rowIdx < 2 ? "3px" : 0,
+                }}
+              >
+                {[...Array(keysInRow)].map((_, keyIdx) => {
+                  const isActive = typingKeys.length > 0 &&
+                    typingKeys[typingKeys.length - 1] * 30 % (rowIdx * 9 + keyIdx + 1) < 0.4;
+                  return (
+                    <motion.div
+                      key={keyIdx}
+                      animate={{
+                        backgroundColor: isActive && screenOn ? "#0078d4" : "#222",
+                        boxShadow: isActive && screenOn
+                          ? "0 0 6px rgba(0, 120, 212, 0.8)"
+                          : "inset 0 1px 1px rgba(255,255,255,0.05)",
+                      }}
+                      transition={{ duration: 0.1 }}
+                      style={{
+                        width: "clamp(8px, 1vw, 12px)",
+                        height: "clamp(8px, 1vw, 12px)",
+                        borderRadius: "1px",
+                        border: "1px solid #111",
+                      }}
+                    />
+                  );
+                })}
+              </div>
+            ))}
+            <div style={{ display: "flex", justifyContent: "center", marginTop: "3px" }}>
+              <motion.div
+                animate={{
+                  backgroundColor: typingKeys.length > 0 && Math.random() > 0.8 && screenOn ? "#0078d4" : "#222",
+                }}
+                style={{
+                  width: "clamp(40px, 6vw, 70px)",
+                  height: "clamp(8px, 1vw, 12px)",
+                  borderRadius: "1px",
+                  border: "1px solid #111",
+                }}
+              />
+            </div>
+          </div>
+
+          {/* Gaming Mouse */}
+          <motion.div
+            whileHover={{ y: -3, boxShadow: "0 8px 20px rgba(0,0,0,0.4)" }}
+            whileTap={{ scale: 0.95 }}
+            style={{
+              background: "linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%)",
+              borderRadius: "10px",
+              width: "clamp(26px, 3.5vw, 42px)",
+              height: "clamp(42px, 5.5vw, 62px)",
+              position: "relative",
+              boxShadow: "0 4px 15px rgba(0,0,0,0.3)",
+              border: "1px solid #222",
+              cursor: "pointer",
+              flexShrink: 0,
+            }}
+          >
+            <motion.div
+              animate={{
+                boxShadow: screenOn ? "0 0 8px #0078d4" : "none",
+                backgroundColor: screenOn ? "#0078d4" : "#222",
+              }}
+              style={{
+                position: "absolute",
+                top: "20%",
+                left: "50%",
+                transform: "translateX(-50%)",
+                width: "2px",
+                height: "8px",
+                borderRadius: "1px",
+              }}
+            />
+          </motion.div>
+        </motion.div>
+
       </div>
     </motion.div>
   );
@@ -1446,9 +1446,9 @@ const iconLinkStyle = {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  width: "44px", 
-  height: "44px", 
-  borderRadius: "50%", 
+  width: "44px",
+  height: "44px",
+  borderRadius: "50%",
   background: "rgba(255, 255, 255, 0.05)",
   border: "1px solid rgba(255, 255, 255, 0.1)",
   backdropFilter: "blur(4px)",
@@ -1462,7 +1462,7 @@ function SocialIcon({ Icon, href }) {
       target="_blank"
       rel="noopener noreferrer"
       style={{ ...iconLinkStyle, willChange: "transform, opacity" }}
-      whileHover={{ 
+      whileHover={{
         y: -5,
         scale: 1.1,
         backgroundColor: "rgba(109, 124, 255, 0.15)",
