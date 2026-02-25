@@ -1,16 +1,26 @@
 User-agent: *
 Allow: /
 Allow: /images/
+Allow: /public/
 Allow: *.png
 Allow: *.jpg
 Allow: *.jpeg
+Allow: *.svg
+Allow: *.pdf
+Crawl-delay: 0
 
 # Image crawlers
 User-agent: Googlebot-Image
 Allow: /
 
+User-agent: Googlebot
+Allow: /
+
 User-agent: Bingbot
 Allow: /
 
+User-agent: Slurp
+Allow: /
+
 # Sitemaps
-Sitemap: /sitemap.xml
+Sitemap: https://phanix-lab.com/sitemap.xml

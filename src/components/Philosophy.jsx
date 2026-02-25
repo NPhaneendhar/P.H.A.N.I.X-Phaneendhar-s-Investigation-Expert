@@ -73,13 +73,13 @@ export default function Philosophy() {
               overflow: "hidden" // Ensure crop works
             }}>
               <motion.img 
-                src="/phaneendhar-nittala-investigator.png" 
+                src="/phanix-lab-founder.png?v=3" 
                 alt="Nittala Phaneendhar"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 onError={(e) => {
                   e.target.onerror = null; 
-                  e.target.src = "/phaneendhar-nittala-profile.png"; 
+                  e.target.src = "/phanix-lab-founder.png?v=3"; 
                 }}
                 style={{
                   width: "100%",
