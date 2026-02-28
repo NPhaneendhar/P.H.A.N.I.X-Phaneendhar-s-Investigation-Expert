@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { FiDownload } from "react-icons/fi";
 
 export default function Navbar({ onAboutClick, isVisible }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,10 +12,10 @@ export default function Navbar({ onAboutClick, isVisible }) {
     <motion.nav
       initial={{ opacity: 0, y: -20 }}
       animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
-      transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }} // Ultra-smooth Apple easing
+      transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }} 
       className="navbar"
       style={{
-        pointerEvents: isVisible ? "auto" : "none" // Prevent clicks before reveal
+        pointerEvents: isVisible ? "auto" : "none" 
       }}
     >
       <div className="nav-container">
@@ -80,7 +81,7 @@ export default function Navbar({ onAboutClick, isVisible }) {
               transition: { 
                 height: { duration: 0.3, ease: [0.16, 1, 0.3, 1] },
                 opacity: { duration: 0.2 }
-              }
+              } 
             }}
             className="mobile-menu"
           >

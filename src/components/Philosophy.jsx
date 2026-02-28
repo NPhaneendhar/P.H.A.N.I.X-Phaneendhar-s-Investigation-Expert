@@ -11,8 +11,8 @@ export default function Philosophy() {
       }}
     >
       <ScrollReveal direction="up" duration={1.2}>
-        <div style={{ 
-          display: "grid", 
+        <div style={{
+          display: "grid",
           gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", 
           gap: "60px",
           alignItems: "center"
@@ -60,49 +60,65 @@ export default function Philosophy() {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            style={{ display: "flex", justifyContent: "center" }}
+            style={{ display: "flex", justifyContent: "center", position: "relative" }}
           >
+            {/* Soft Ambient Light Behind */}
+            <div style={{
+              position: "absolute",
+              width: "120%",
+              height: "120%",
+              top: "-10%",
+              left: "-10%",
+              background: "radial-gradient(circle at center, rgba(109, 124, 255, 0.15) 0%, transparent 70%)",
+              zIndex: 0,
+              pointerEvents: "none"
+            }} />
+
             <div style={{
               position: "relative",
+              zIndex: 1,
               borderRadius: "32px",
-              padding: "12px",
-              background: "rgba(255, 255, 255, 0.05)",
-              border: "0.5px solid rgba(255, 255, 255, 0.15)", // Lite, thin border
-              backdropFilter: "blur(20px)",
-              boxShadow: "0 20px 40px rgba(0, 0, 0, 0.2)",
-              overflow: "hidden" // Ensure crop works
+              padding: "16px",
+              background: "rgba(255, 255, 255, 0.03)",
+              border: "1px solid rgba(255, 255, 255, 0.12)",
+              backdropFilter: "blur(30px) saturate(160%)",
+              boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.05)",
+              overflow: "hidden"
             }}>
               <motion.img 
                 src="/phanix-lab-founder.png?v=3" 
                 alt="Nittala Phaneendhar"
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
-                onError={(e) => {
-                  e.target.onerror = null; 
-                  e.target.src = "/phanix-lab-founder.png?v=3"; 
-                }}
+                whileHover={{ scale: 1.03 }}
+                transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                 style={{
                   width: "100%",
                   maxWidth: "400px",
-                  aspectRatio: "4/5", // Taller aspect ratio to allow cropping
-                  objectFit: "cover", // Professional crop
-                  objectPosition: "top", // Keep the face, crop the shirt from bottom
+                  aspectRatio: "4/5",
+                  objectFit: "cover",
+                  objectPosition: "top",
                   borderRadius: "20px",
                   display: "block",
-                  // Lite aesthetic filter
-                  filter: "brightness(1.04) contrast(1.02) saturate(1.02)", 
-                  opacity: 1
+                  filter: "brightness(1.05) contrast(1.05)",
                 }}
               />
               
-              {/* Premium Glass Effect Overlay - Lite Aesthetic */}
+              {/* Premium Glass Flare */}
               <div style={{
                 position: "absolute",
-                inset: 0,
-                borderRadius: "32px",
-                background: "linear-gradient(135deg, rgba(255,255,255,0.08) 0%, transparent 40%, rgba(255,255,255,0.02) 100%)",
+                top: "-50%",
+                left: "-50%",
+                width: "200%",
+                height: "200%",
+                background: "linear-gradient(45deg, transparent 45%, rgba(255, 255, 255, 0.1) 50%, transparent 55%)",
+                transform: "rotate(30deg)",
                 pointerEvents: "none"
               }} />
+
+              {/* Glowing Corner Accents */}
+              <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", pointerEvents: "none" }}>
+                <div style={{ position: "absolute", top: "10px", left: "10px", width: "40px", height: "1px", background: "rgba(255,255,255,0.3)" }} />
+                <div style={{ position: "absolute", top: "10px", left: "10px", width: "1px", height: "40px", background: "rgba(255,255,255,0.3)" }} />
+              </div>
             </div>
           </motion.div>
         </div>
