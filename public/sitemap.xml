@@ -3,22 +3,15 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://phanix-lab.com/</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     
     <!-- Profile Images -->
     <image:image>
-      <image:loc>https://phanix-lab.com/profile.png</image:loc>
+      <image:loc>https://phanix-lab.com/phani.png</image:loc>
       <image:caption>Phaneendhar Nittala - Phanix Lab Founder, Digital Investigator and Forensic Expert</image:caption>
       <image:title>Phaneendhar Nittala (Phanix) Profile Photo</image:title>
-      <image:geo_location>India</image:geo_location>
-    </image:image>
-    
-    <image:image>
-      <image:loc>https://phanix-lab.com/phaneendhar-nittala-profile.png</image:loc>
-      <image:caption>Phaneendhar Nittala - Digital Investigator specializing in cybersecurity and blockchain forensics</image:caption>
-      <image:title>Phaneendhar Nittala Professional Photo</image:title>
       <image:geo_location>India</image:geo_location>
     </image:image>
     
@@ -26,13 +19,6 @@
       <image:loc>https://phanix-lab.com/phanix-lab-founder.png</image:loc>
       <image:caption>Phanix Lab Founder - Phaneendhar Nittala, Expert in Digital Forensics</image:caption>
       <image:title>Phanix Lab Founder Phaneendhar Nittala</image:title>
-      <image:geo_location>India</image:geo_location>
-    </image:image>
-    
-    <image:image>
-      <image:loc>https://phanix-lab.com/phaneendhar-nittala-investigator.png</image:loc>
-      <image:caption>Phaneendhar Nittala - Forensic Architect and Cybersecurity Specialist</image:caption>
-      <image:title>Phaneendhar Nittala Digital Investigator</image:title>
       <image:geo_location>India</image:geo_location>
     </image:image>
     
@@ -60,6 +46,12 @@
       <image:loc>https://phanix-lab.com/images/project_qr.png</image:loc>
       <image:caption>QR Forensic Analysis Project by Phaneendhar Nittala (Phanix)</image:caption>
       <image:title>QR Code Forensic Analysis System</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://phanix-lab.com/images/project_nittala.png</image:loc>
+      <image:caption>N.I.T.T.A.L.A V7.4 intelligence project by Phaneendhar Nittala (Phanix)</image:caption>
+      <image:title>N.I.T.T.A.L.A V7.4 Project</image:title>
     </image:image>
   </url>
 </urlset>

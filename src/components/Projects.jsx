@@ -73,7 +73,7 @@ function ProjectDossier({ project, onClose }) {
                 <span style={{ fontSize: "10px", color: "#6d7cff", fontWeight: "900", letterSpacing: "2px" }}>CASE_ID // {project.id}</span>
              </div>
              <div style={{ borderRadius: "12px", overflow: "hidden", border: "1px solid rgba(255,255,255,0.1)", boxShadow: "0 20px 40px rgba(0,0,0,0.4)" }}>
-               <img src={project.image} alt="" style={{ width: "100%", height: "auto", display: "block" }} />
+               <img src={project.image} alt={project.alt} style={{ width: "100%", height: "auto", display: "block" }} />
              </div>
              
              <div style={{ marginTop: "30px" }}>
@@ -132,7 +132,8 @@ const projects = [
     description: "The crown jewel of the Phanix Lab. A comprehensive digital investigation ecosystem designed for multi-layered forensic analysis. It features 6 independent modules that communicate through an encrypted backbone, providing investigators with real-time data correlation and integrity scanning.",
     tech: "React, Python, Forensic, GSAP",
     link: "https://p-h-a-n-i-x-investigation-e-xpert.vercel.app/",
-    image: "images/project_phanix.png"
+    image: "images/project_phanix.png",
+    alt: "Phanix Investigation Expert Platform project preview by Phaneendhar Nittala"
   },
   {
     id: "NT-AI",
@@ -142,7 +143,8 @@ const projects = [
     description: "An AI-driven intelligence suite that automates the tedious parts of digital discovery. It utilizes specialized models for pattern matching, trace analysis, and generates courtroom-ready reports within seconds.",
     tech: "Python, AI, Deep-Analysis",
     link: "https://nittala-forensic-suite.vercel.app/",
-    image: "images/project_nittala.png"
+    image: "images/project_nittala.png",
+    alt: "N.I.T.T.A.L.A V7.4 intelligence suite project preview by Phaneendhar Nittala"
   },
   {
     id: "QR-ARCH",
@@ -152,7 +154,8 @@ const projects = [
     description: "A secure protocol for physical evidence tagging using QR technology. Every tag is cryptographically linked to a blockchain record to prevent tampering.",
     tech: "Python, OpenCV, Blockchain",
     link: "https://nphaneendhar.github.io/P.H.A.N.I.X-FORENSIC-QR-ARCHITECT/",
-    image: "images/project_qr.png"
+    image: "images/project_qr.png",
+    alt: "Forensic QR System project preview by Phaneendhar Nittala"
   }
 ];
 
@@ -377,7 +380,7 @@ const ModernProjectCard = ({ project, feature }) => {
         transition: "transform 0.8s cubic-bezier(0.16, 1, 0.3, 1)",
         opacity: isHovered ? 0.4 : 0.25
       }}>
-        <img src={project.image} alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        <img src={project.image} alt={project.alt} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
         <div style={{ 
           position: "absolute", top: 0, left: 0, width: "100%", height: "100%", 
           background: "linear-gradient(to top, #05070a 15%, transparent 100%)" 

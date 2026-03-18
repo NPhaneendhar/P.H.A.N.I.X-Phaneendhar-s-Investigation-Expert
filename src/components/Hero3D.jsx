@@ -379,6 +379,36 @@ export default function Hero3D({ onReady, onAboutClick }) {
                 }}
                 style={{ willChange: "transform, opacity, filter" }}
               >
+                <div
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    marginBottom: "20px",
+                    padding: "8px 12px",
+                    borderRadius: "999px",
+                    background: "rgba(255, 255, 255, 0.04)",
+                    border: "1px solid rgba(255, 255, 255, 0.12)"
+                  }}
+                >
+                  <img
+                    src="/phani.png"
+                    alt="Phaneendhar Nittala profile photo"
+                    width="42"
+                    height="42"
+                    loading="eager"
+                    style={{
+                      width: "42px",
+                      height: "42px",
+                      borderRadius: "50%",
+                      objectFit: "cover",
+                      border: "1px solid rgba(109, 124, 255, 0.5)"
+                    }}
+                  />
+                  <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.85)", fontWeight: 700, letterSpacing: "0.4px" }}>
+                    Phaneendhar Nittala
+                  </span>
+                </div>
                 <h1
                   style={{
                     fontSize: "clamp(42px, 7vw, 76px)",
@@ -459,7 +489,7 @@ export default function Hero3D({ onReady, onAboutClick }) {
                     fontStyle: "italic"
                   }}
                 >
-                  Digital Investigator (Phanix). <br />
+                  Digital Investigator (Phanix) <br />
                   Independently architected with clinical precision.
                   Focused on logic, structure, and systematic evidence.
                 </p>
