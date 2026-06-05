@@ -77,28 +77,31 @@ export default function Philosophy() {
             <div style={{
               position: "relative",
               zIndex: 1,
-              borderRadius: "32px",
+              borderRadius: "28px",
               padding: "16px",
-              background: "rgba(255, 255, 255, 0.03)",
-              border: "1px solid rgba(255, 255, 255, 0.12)",
+              background: "rgba(255, 255, 255, 0.04)",
+              border: "1px solid rgba(255, 255, 255, 0.10)",
               backdropFilter: "blur(30px) saturate(160%)",
-              boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.05)",
-              overflow: "hidden"
+              boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.04)",
+              overflow: "hidden",
+              transform: "translateY(-10px)"
             }}>
               <motion.img 
-                src="/phanix-lab-founder.png?v=3" 
-                alt="Nittala Phaneendhar"
+                src="/Pasted image.png" 
+                alt="Ownership and responsibility"
                 whileHover={{ scale: 1.03 }}
                 transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                 style={{
                   width: "100%",
-                  maxWidth: "400px",
-                  aspectRatio: "4/5",
-                  objectFit: "cover",
-                  objectPosition: "top",
+                  maxWidth: "770px",
+                  height: "550px",
+                  objectFit: "contain",
+                  objectPosition: "center",
                   borderRadius: "20px",
                   display: "block",
-                  filter: "brightness(1.05) contrast(1.05)",
+                  filter: "brightness(0.88) contrast(0.95) saturate(0.95)",
+                  opacity: 0.96,
+                  transform: "translateY(-8px)"
                 }}
               />
               
